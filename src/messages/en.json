@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "title": "Júlio César | Full Stack Developer",
+    "description": "Professional portfolio of Júlio César, a Full Stack Developer with a background in data analysis, currently pursuing a degree in Software Engineering.",
+    "siteName": "Júlio César — Portfolio"
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "opensInNewTab": "opens in a new tab",
+    "backToTop": "Back to top"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact",
+    "cta": "Get in touch",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenu": "Navigation menu",
+    "language": "Language",
+    "switchLanguage": "Switch language to {language}",
+    "toggleTheme": "Toggle light and dark theme",
+    "homeLink": "Júlio César — home page"
+  },
+  "hero": {
+    "badge": "Full Stack Developer",
+    "role": { "before": "", "highlight": "Full Stack", "after": " Developer" },
+    "tagline": {
+      "before": "Turning challenges into ",
+      "highlight": "smart digital solutions",
+      "after": "."
+    },
+    "description": "I'm a Full Stack Developer with a background in data analysis, currently pursuing a degree in Software Engineering. I combine an analytical mindset with software development to build efficient, modern, problem-solving solutions.",
+    "primaryCta": "Explore Projects",
+    "secondaryCta": "Get in Touch",
+    "socialLabel": "Professional profiles",
+    "scroll": "Scroll to the next section",
+    "visual": {
+      "codeTitle": "analytics.ts",
+      "codeComment": "Same GROUP BY, now in TypeScript",
+      "sqlTitle": "query.sql",
+      "chartTitle": "Revenue by region",
+      "caption": "Same question, two languages: data and code."
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "About me",
+    "subtitle": "A closer look at my journey and my passion for technology.",
+    "paragraphs": [
+      "I'm a Full Stack Developer who builds web applications, systems and websites, taking care of both the logic and data and the interface.",
+      "Before moving into development, I worked as a Data Analyst, organizing and interpreting information with Power BI. That experience shaped how I approach software: understand the problem and the data before writing the first line of code.",
+      "I'm currently pursuing a degree in Software Engineering and bring what I study about architecture, quality and best practices into my daily work, with a particular interest in efficient, scalable and maintainable applications."
+    ],
+    "facts": {
+      "location": "Location",
+      "focus": "Current focus",
+      "focusValue": "Full Stack Development",
+      "education": "Education",
+      "educationValue": "Software Engineering (in progress)"
+    },
+    "pillars": {
+      "fullstack": {
+        "title": "Full Stack Development",
+        "description": "Building applications and digital solutions, from the database to the interface."
+      },
+      "data": {
+        "title": "Data Analysis",
+        "description": "Hands-on experience with Power BI and turning information into decisions."
+      },
+      "engineering": {
+        "title": "Software Engineering",
+        "description": "Continuous improvement in architecture, development and best practices."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Journey",
+    "title": "Professional Experience",
+    "subtitle": "My path in technology, from data to software development.",
+    "current": "Current",
+    "previous": "Previous role",
+    "present": "present",
+    "responsibilities": "Responsibilities",
+    "tools": "Tools",
+    "achievements": "Results"
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Technologies & Skills",
+    "subtitle": "Tools and technologies that are part of my professional journey.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Databases",
+      "data": "Data & BI",
+      "tools": "Tools"
+    }
+  },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Featured Projects",
+    "subtitle": "Solutions that reflect my experience and growth as a developer.",
+    "details": "View details",
+    "repository": "Code",
+    "demo": "Live demo",
+    "viewAll": "See all repositories on GitHub",
+    "status": {
+      "demo": "Live demo",
+      "completed": "Completed",
+      "evolving": "Evolving"
+    },
+    "detail": {
+      "back": "All projects",
+      "overview": "Overview",
+      "problem": "Problem",
+      "solution": "Solution",
+      "features": "Features",
+      "technologies": "Technologies",
+      "challenges": "Technical challenges",
+      "images": "Images",
+      "links": "Links",
+      "year": "Year",
+      "type": "Type",
+      "statusLabel": "Status",
+      "repositoryLink": "View code on GitHub",
+      "demoLink": "Open live demo",
+      "next": "Next project"
+    }
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "Education & Learning",
+    "subtitle": "My degree as part of my professional growth.",
+    "inProgress": "In progress",
+    "completed": "Completed",
+    "started": "Started",
+    "expectedEnd": "Expected graduation",
+    "areasTitle": "Areas of focus",
+    "areasNote": "Areas related to the degree that complement my day-to-day practice.",
+    "description": "My Software Engineering degree broadens the theory behind what I apply at work, connecting hands-on development with foundations in architecture, algorithms and quality.",
+    "certifications": "Certifications",
+    "viewCertificate": "View certificate"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something together?",
+    "description": "I'm always open to new opportunities, projects and professional connections. If you have an idea, a proposal or just want to talk tech, get in touch.",
+    "channels": "Channels",
+    "email": "Email",
+    "githubHint": "Code and projects",
+    "linkedinHint": "Professional background",
+    "emailHint": "Direct reply",
+    "form": {
+      "title": "Send a message",
+      "name": "Name",
+      "namePlaceholder": "What should I call you?",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What would you like to talk about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me a bit about your idea or proposal.",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Message sent! Thanks for reaching out — I'll get back to you soon.",
+      "error": "Couldn't send your message right now. Please try again shortly or reach me on LinkedIn.",
+      "rateLimited": "Too many messages in a short time. Please wait a few minutes and try again.",
+      "unavailable": "Sending messages through the site isn't active yet. In the meantime, reach me on LinkedIn or GitHub.",
+      "required": "required",
+      "validation": {
+        "nameMin": "Please enter your name (at least 2 characters).",
+        "nameMax": "Name can be at most 80 characters.",
+        "email": "Please enter a valid email address.",
+        "subjectMin": "Please enter a subject (at least 3 characters).",
+        "subjectMax": "Subject can be at most 120 characters.",
+        "messageMin": "Your message needs at least 20 characters.",
+        "messageMax": "Your message can be at most 2000 characters."
+      }
+    }
+  },
+  "footer": {
+    "role": "Full Stack Developer",
+    "tagline": "Built with dedication, technology and attention to detail.",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "back": "Back to home"
+  }
+}

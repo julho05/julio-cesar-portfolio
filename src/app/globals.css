@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+/* O tema Ã© controlado pelo atributo data-theme no <html> (padrÃ£o: dark). */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ============================================================
+   DESIGN TOKENS
+   Altere as cores aqui: todos os componentes consomem estas variÃ¡veis.
+   ============================================================ */
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* SuperfÃ­cies */
+  --bg: #0b0f19;
+  --bg-elevated: #111827;
+  --card: #151d2e;
+  --card-hover: #19233a;
+  --border: #273244;
+  --border-subtle: rgb(39 50 68 / 0.6);
+
+  /* Texto */
+  --fg: #f9fafb;
+  --muted: #9ca3af;
+
+  /* Marca */
+  --accent: #3b82f6;
+  --accent-strong: #2563eb;
+  --accent-strong-hover: #1d4ed8;
+  --accent-glow: #60a5fa;
+  --accent-soft: rgb(59 130 246 / 0.12);
+  --on-accent: #ffffff;
+
+  /* Efeitos */
+  --grid-line: rgb(148 163 184 / 0.055);
+  --header-bg: rgb(11 15 25 / 0.72);
+  --glow-1: rgb(37 99 235 / 0.22);
+  --glow-2: rgb(96 165 250 / 0.12);
+  --elev-card: 0 1px 0 0 rgb(255 255 255 / 0.04) inset, 0 20px 40px -24px rgb(0 0 0 / 0.6);
+  --elev-glow: 0 0 0 1px rgb(59 130 246 / 0.35), 0 8px 32px -8px rgb(37 99 235 / 0.55);
+
+  /* Sintaxe da janela de cÃ³digo */
+  --code-bg: #0d1424;
+  --code-keyword: #c084fc;
+  --code-type: #60a5fa;
+  --code-fn: #7dd3fc;
+  --code-string: #86efac;
+  --code-number: #fca5a5;
+  --code-comment: #64748b;
+  --code-punct: #94a3b8;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f8fafc;
+  --bg-elevated: #f1f5f9;
+  --card: #ffffff;
+  --card-hover: #ffffff;
+  --border: #e2e8f0;
+  --border-subtle: rgb(226 232 240 / 0.8);
+
+  --fg: #0f172a;
+  --muted: #475569;
+
+  --accent: #2563eb;
+  --accent-strong: #2563eb;
+  --accent-strong-hover: #1d4ed8;
+  --accent-glow: #2563eb;
+  --accent-soft: rgb(37 99 235 / 0.08);
+  --on-accent: #ffffff;
+
+  --grid-line: rgb(15 23 42 / 0.045);
+  --header-bg: rgb(248 250 252 / 0.78);
+  --glow-1: rgb(59 130 246 / 0.14);
+  --glow-2: rgb(96 165 250 / 0.1);
+  --elev-card: 0 1px 2px 0 rgb(15 23 42 / 0.04), 0 16px 32px -20px rgb(15 23 42 / 0.18);
+  --elev-glow: 0 0 0 1px rgb(37 99 235 / 0.25), 0 8px 28px -10px rgb(37 99 235 / 0.45);
+
+  --code-bg: #0f172a;
+}
+
+@theme inline {
+  /* Cores â†’ utilitÃ¡rios bg-*, text-*, border-* */
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-strong-hover: var(--accent-strong-hover);
+  --color-accent-glow: var(--accent-glow);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+
+  /* Tipografia */
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Menlo, Consolas, monospace;
+
+  /* Sombras */
+  --shadow-card: var(--elev-card);
+  --shadow-glow: var(--elev-glow);
+}
+
+@theme {
+  /* Raios */
+  --radius-card: 1.25rem;
+  --radius-control: 0.75rem;
+
+  /* Movimento */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-soft: cubic-bezier(0.45, 0, 0.55, 1);
+
+  --animate-enter: enter 0.9s var(--ease-out-expo) both;
+  --animate-float: float 7s var(--ease-in-out-soft) infinite;
+  --animate-float-slow: float 9s var(--ease-in-out-soft) infinite;
+  --animate-scroll-dot: scroll-dot 2.2s var(--ease-in-out-soft) infinite;
+
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 18px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -10px, 0);
+    }
+  }
+
+  @keyframes scroll-dot {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3px, 0);
+    }
+    30% {
+      opacity: 1;
+    }
+    80%,
+    100% {
+      opacity: 0;
+      transform: translate3d(0, 9px, 0);
+    }
+  }
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: rgb(59 130 246 / 0.35);
+    color: var(--fg);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-glow);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+/* ============================================================
+   UTILITÃRIOS DE MARCA
+   ============================================================ */
+
+/* Grid tÃ©cnico quase imperceptÃ­vel, que se dissolve nas bordas. */
+@utility bg-tech-grid {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 100%);
+}
+
+/* Texto em gradiente azul para destaques pontuais. */
+@utility text-gradient {
+  background-image: linear-gradient(110deg, var(--accent-glow) 0%, var(--accent) 45%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme="light"] .text-gradient {
+  background-image: linear-gradient(110deg, #1d4ed8 0%, #2563eb 50%, #3b82f6 100%);
+}
+
+/* Borda com brilho em gradiente (usada em cards de destaque). */
+@utility border-gradient {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(140deg, rgb(96 165 250 / 0.55), rgb(39 50 68 / 0.4) 40%, rgb(39 50 68 / 0.4) 70%, rgb(96 165 250 / 0.3)) border-box;
+}
+
+/* ============================================================
+   MOVIMENTO REDUZIDO
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

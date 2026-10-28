@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "title": "Júlio César | Desenvolvedor Full Stack",
+    "description": "Portfólio profissional de Júlio César, Desenvolvedor Full Stack com experiência em análise de dados e graduando em Engenharia de Software.",
+    "siteName": "Júlio César — Portfólio"
+  },
+  "common": {
+    "skipToContent": "Pular para o conteúdo",
+    "opensInNewTab": "abre em nova aba",
+    "backToTop": "Voltar ao topo"
+  },
+  "nav": {
+    "label": "Navegação principal",
+    "home": "Início",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "skills": "Tecnologias",
+    "projects": "Projetos",
+    "education": "Formação",
+    "contact": "Contato",
+    "cta": "Fale comigo",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "mobileMenu": "Menu de navegação",
+    "language": "Idioma",
+    "switchLanguage": "Mudar idioma para {language}",
+    "toggleTheme": "Alternar entre tema claro e escuro",
+    "homeLink": "Júlio César — página inicial"
+  },
+  "hero": {
+    "badge": "Full Stack Developer",
+    "role": { "before": "Desenvolvedor ", "highlight": "Full Stack", "after": "" },
+    "tagline": {
+      "before": "Transformando desafios em soluções digitais ",
+      "highlight": "inteligentes",
+      "after": "."
+    },
+    "description": "Sou Desenvolvedor Full Stack, com experiência anterior em análise de dados e atualmente graduando em Engenharia de Software. Combino visão analítica e desenvolvimento de software para criar soluções eficientes, modernas e orientadas à resolução de problemas.",
+    "primaryCta": "Explorar Projetos",
+    "secondaryCta": "Entrar em Contato",
+    "socialLabel": "Perfis profissionais",
+    "scroll": "Rolar para a próxima seção",
+    "visual": {
+      "codeTitle": "analytics.ts",
+      "codeComment": "O mesmo GROUP BY, agora em TypeScript",
+      "sqlTitle": "query.sql",
+      "chartTitle": "Receita por região",
+      "caption": "Mesma pergunta, duas linguagens: dados e código."
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre",
+    "title": "Sobre mim",
+    "subtitle": "Conheça um pouco da minha trajetória e da minha paixão por tecnologia.",
+    "paragraphs": [
+      "Sou Desenvolvedor Full Stack e trabalho na construção de aplicações web, sistemas e sites, cuidando tanto da lógica e dos dados quanto da interface.",
+      "Antes do desenvolvimento, atuei como Analista de Dados, organizando e interpretando informações com Power BI. Essa experiência moldou a forma como encaro software: entender o problema e os dados antes de escrever a primeira linha de código.",
+      "Hoje curso Engenharia de Software e levo para o dia a dia o que estudo sobre arquitetura, qualidade e boas práticas, com interesse especial em aplicações eficientes, escaláveis e fáceis de manter."
+    ],
+    "facts": {
+      "location": "Localização",
+      "focus": "Foco atual",
+      "focusValue": "Desenvolvimento Full Stack",
+      "education": "Formação",
+      "educationValue": "Engenharia de Software (em andamento)"
+    },
+    "pillars": {
+      "fullstack": {
+        "title": "Desenvolvimento Full Stack",
+        "description": "Desenvolvimento de aplicações e soluções digitais, do banco de dados à interface."
+      },
+      "data": {
+        "title": "Análise de Dados",
+        "description": "Experiência com Power BI e interpretação de informações para apoiar decisões."
+      },
+      "engineering": {
+        "title": "Engenharia de Software",
+        "description": "Aprimoramento contínuo em arquitetura, desenvolvimento e boas práticas."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Trajetória",
+    "title": "Experiência Profissional",
+    "subtitle": "Minha evolução na tecnologia, dos dados ao desenvolvimento de software.",
+    "current": "Atual",
+    "previous": "Experiência anterior",
+    "present": "o momento",
+    "responsibilities": "Responsabilidades",
+    "tools": "Ferramentas",
+    "achievements": "Resultados"
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Tecnologias & Habilidades",
+    "subtitle": "Ferramentas e tecnologias que fazem parte da minha trajetória profissional.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Banco de Dados",
+      "data": "Dados & BI",
+      "tools": "Ferramentas"
+    }
+  },
+  "projects": {
+    "eyebrow": "Portfólio",
+    "title": "Projetos em Destaque",
+    "subtitle": "Soluções que representam minha experiência e evolução como desenvolvedor.",
+    "details": "Ver detalhes",
+    "repository": "Código",
+    "demo": "Demonstração",
+    "viewAll": "Ver todos os repositórios no GitHub",
+    "status": {
+      "demo": "Demonstração publicada",
+      "completed": "Concluído",
+      "evolving": "Em evolução"
+    },
+    "detail": {
+      "back": "Todos os projetos",
+      "overview": "Visão geral",
+      "problem": "Problema",
+      "solution": "Solução",
+      "features": "Funcionalidades",
+      "technologies": "Tecnologias",
+      "challenges": "Desafios técnicos",
+      "images": "Imagens",
+      "links": "Links",
+      "year": "Ano",
+      "type": "Tipo",
+      "statusLabel": "Status",
+      "repositoryLink": "Ver código no GitHub",
+      "demoLink": "Abrir demonstração",
+      "next": "Próximo projeto"
+    }
+  },
+  "education": {
+    "eyebrow": "Formação",
+    "title": "Formação & Aprendizado",
+    "subtitle": "A graduação como parte da minha evolução profissional.",
+    "inProgress": "Em andamento",
+    "completed": "Concluído",
+    "started": "Início",
+    "expectedEnd": "Previsão de conclusão",
+    "areasTitle": "Áreas de aprofundamento",
+    "areasNote": "Áreas relacionadas à formação, que complementam a prática do dia a dia.",
+    "description": "A graduação em Engenharia de Software amplia a base teórica por trás do que aplico no trabalho, conectando a prática do desenvolvimento a fundamentos de arquitetura, algoritmos e qualidade.",
+    "certifications": "Certificações",
+    "viewCertificate": "Ver certificado"
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "title": "Vamos construir algo juntos?",
+    "description": "Estou sempre aberto a novas oportunidades, projetos e conexões profissionais. Se você tem uma ideia, proposta ou deseja conversar sobre tecnologia, entre em contato.",
+    "channels": "Canais",
+    "email": "E-mail",
+    "githubHint": "Código e projetos",
+    "linkedinHint": "Trajetória profissional",
+    "emailHint": "Resposta direta",
+    "form": {
+      "title": "Envie uma mensagem",
+      "name": "Nome",
+      "namePlaceholder": "Como posso te chamar?",
+      "email": "E-mail",
+      "emailPlaceholder": "voce@empresa.com",
+      "subject": "Assunto",
+      "subjectPlaceholder": "Sobre o que vamos conversar?",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte um pouco sobre a sua ideia ou proposta.",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando…",
+      "success": "Mensagem enviada! Obrigado pelo contato — vou responder em breve.",
+      "error": "Não foi possível enviar agora. Tente novamente em instantes ou fale comigo pelo LinkedIn.",
+      "rateLimited": "Muitas mensagens em pouco tempo. Aguarde alguns minutos e tente de novo.",
+      "unavailable": "O envio de mensagens pelo site ainda não está ativo. Enquanto isso, fale comigo pelo LinkedIn ou pelo GitHub.",
+      "required": "obrigatório",
+      "validation": {
+        "nameMin": "Informe seu nome (mínimo de 2 caracteres).",
+        "nameMax": "O nome pode ter no máximo 80 caracteres.",
+        "email": "Informe um e-mail válido.",
+        "subjectMin": "Informe o assunto (mínimo de 3 caracteres).",
+        "subjectMax": "O assunto pode ter no máximo 120 caracteres.",
+        "messageMin": "A mensagem precisa ter pelo menos 20 caracteres.",
+        "messageMax": "A mensagem pode ter no máximo 2000 caracteres."
+      }
+    }
+  },
+  "footer": {
+    "role": "Full Stack Developer",
+    "tagline": "Desenvolvido com dedicação, tecnologia e atenção aos detalhes.",
+    "rights": "Todos os direitos reservados."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "O endereço acessado não existe ou foi movido.",
+    "back": "Voltar ao início"
+  }
+}
